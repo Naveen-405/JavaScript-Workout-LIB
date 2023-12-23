@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background: lightgreen;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+.container-fluid{
+    width: 500px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+}
+label{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.form-control{
+    text-align: left;
+    margin-bottom: 25px;
+}
+/* Styling Form-control select */
+.form-control label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+    width: 95%;
+    display: block;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+
+/*styling button */
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button{
+    border: 2px solid black;
+    background-color: lightgreen;
+    padding: 10px;
+
+}

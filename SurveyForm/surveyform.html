@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="./survey.css">
+</head>
+<body>
+    <section name="survey-form">
+        <div class="container-fluid">
+            <h1>Survey Form</h1>    
+            <form action="" name="myform" onsubmit="return validateform()">
+                <div class="form-control">
+                    <label for="Fname">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-control">
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" >
+                </div>
+                <div class="form-control">
+                    <label for="Age">Age</label>
+                    <input type="text" placeholder="Enter your Age" id="age">
+                </div>
+                <div class="form-control">
+                    <label for="deg">Which Option best describes you?</label>
+                    <select name="degree" id="role" required>
+                        <option value="Student">Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="College">College</option>
+                        <option value="Professional">Professional</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="ref">Would You Recommended to my Friend?</label>
+                    <input type="radio" name="recom" id="ref">Yes 
+                    <input type="radio" name="recom" id="ref"> No 
+                    <input type="radio" name="recom" id="ref">Maybe
+                </div>
+                <div class="form-control">
+                    <label for="">Languages and FrameWorks 
+                        <small>(Check all the items before select)</small></label><br>
+                        <label for="inp-1">
+                            <input type="checkbox" name="lang" id="">C
+                        </label>
+                        <label for="inp-2">
+                            <input type="checkbox" name="lang" id="">Python
+                        </label>
+                        <label for="inp-3">
+                            <input type="checkbox" name="lang" id="">Mongo DB
+                        </label>
+                        <label for="inp-4">
+                            <input type="checkbox" name="lang" id="">Javascript
+                        </label>
+                        <label for="inp-5">
+                            <input type="checkbox" name="lang" id="">Express Js
+                        </label>
+                        <label for="inp-6">
+                            <input type="checkbox" name="lang" id="">Go lang
+                        </label>
+                        <label for="inp-7">
+                            <input type="checkbox" name="lang" id="">Node Js
+                        </label>
+                        <label for="inp-8">
+                            <input type="checkbox" name="lang" id="">Angular js
+                        </label>
+                        <label for="inp-9">
+                            <input type="checkbox" name="lang" id="">React js
+                        </label>
+                       <label for="inp-10">
+                        <input type="checkbox" name="lang" id="">C
+                       </label>
+                </div>
+                <div class="form-control">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comts" id="cmnt" cols="30" rows="5"></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" name="sub" onclick=" return check()"  class="input_btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="./survey.js"></script>
+</body>
+</html>
